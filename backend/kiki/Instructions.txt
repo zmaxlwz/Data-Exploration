@@ -1,0 +1,30 @@
+INSTRUCTIONS ON HOW TO RUN THE PROJECT IN COMMAND LINE:
+
+1.	Place all the packages of the project inside a folder called "src".
+
+2.	Create 2 folders. The first is named: "clustersRowcColc" and the second:"exploreLevelsRowcColc" to store the cluster centroids and the object discovery exploration files accordingly.
+Store the folders at the same level with your src folder. 
+
+3.	Create a folder named "lib" at the same level with your src folder and put the libraries used by the project
+in the folder. The libraries required for the project to run are: weka.jar, org.json-20120521.jar and 
+postgresql-9.3-1102.jdbc3.jar.
+
+4.	Create an empty directory called "bin" at the same level with your src folder.
+
+5.	Run script.sh in your terminal by running this command: $. ./script.sh.
+
+INSTRUCTIONS ON HOW TO RUN THE PROJECT IN ECLIPSE:
+
+1.	Import the project -> File -> Import -> Existing project into workspace -> locate the file and import.
+
+2.	Create 2 folders. The first is named: "clustersRowcColc" and the second:"exploreLevelsRowcColc" to store the cluster centroids 
+and the object discovery exploration files accordingly.
+Place the folders at the same level with your src folder. 
+
+3. Add the libraries (weka.jar, org.json-20120521.jar and postgresql-9.3-1102.jdbc3.jar.) to the project 
+(right click to the project's name -> properties -> java build path -> Add External Jars)
+
+4. Right click in the Driver.java class -> Run As.. -> Run Configurations -> Arguments -> Program Arguments -> type: "config.json" -> Run.
+
+
+ 

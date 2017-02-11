@@ -1,0 +1,16 @@
+{
+"db":{
+	"host":"dbcluster.cs.umass.edu",
+	"port":54320,
+	"user":"lppeng",
+	"pwd":"CSlppCF",
+	"db":"testdb"
+},
+"query":{
+	"tableName":"sdss_random_sample",
+	"attributes":["rowc","colc"],
+	"key":"objid",
+	"visualAttributes":["ra","dec"],
+	"focusedExploration":false
+}
+}

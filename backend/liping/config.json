@@ -1,0 +1,47 @@
+{
+"db":{
+	"host":"dbcluster.cs.umass.edu",
+	"port":54320,
+	"user":"lppeng",
+	"pwd":"CSlppCF",
+	"db":"testdb"
+},
+"query":{
+	"tbl":"sdss_random_sample",
+	"where_attr":["rowc","colc"]	
+},
+"initialsamples":{
+	"method":"FILE",
+	"FILE":"initialsamples/rowc,colc/1_pos_1_neg.random.txt"
+},
+"learning":{
+	"method":"LIBSVM",
+	"LIBSVM":{
+		"gamma":0.0001,
+		"C":100000
+	}
+},
+"explore":{
+	"sample_round_limit":1,
+	"method":"RANDOM",
+	"OPT_TREE":{
+		"node_eval":10000,
+		"presample_count":450
+	},
+	"DECISION_TREE":{
+		"delta":0,
+		"grid_count":100
+	},
+	"RANDOM":450
+},
+"eval":{	
+	"mode":"GRIDS",
+	"granularity":10000
+},
+"stop":{
+	"limit":300,
+	"accuracy_thre":1,
+	"fitting_thre":0
+}, 
+"truth":"(rowc-682.5)^2+(colc-1022.5)^2<83^2"
+}

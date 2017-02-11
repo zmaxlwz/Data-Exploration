@@ -1,0 +1,32 @@
+{
+"initialsamples":{
+	"method":"EQUIWIDTH",
+	"sample_limit":100
+},
+"learning":{
+	"method":"LIBSVM",
+	"LIBSVM":{
+		"gamma":0.0001,
+		"C":100000
+	}
+},
+"explore":{
+	"sample_round_limit":1,
+	"method":"RANDOM",
+	"OPT_TREE":{
+		"node_eval":10000,
+		"presample_count":450
+	},
+	"DECISION_TREE":{
+		"delta":0,
+		"grid_count":100
+	},
+	"RANDOM":450
+},
+"eval":{	
+	"mode":"GRIDS",
+	"granularity":10000
+},
+"visual_truth":[{"rowc":[682.5,100],"colc":[1022.5,100]}],
+"truth_shape":"ellipse"
+}
