@@ -216,7 +216,7 @@ if (!$dbconn) {
 					if($_SESSION["tblname"] == "sdss_random_sample"){
 						//use sdss query
 						
-	                    $query3 = "select a.attname as col_name, c.typname as col_type
+	                    $query3 = "SELECT a.attname as col_name, c.typname as col_type
 	                    from pg_attribute as a, pg_class as b, pg_type as c
 	                    where a.attrelid = b.oid and a.atttypid = c.oid
 	                    and b.relname = '{$_SESSION["tblname"]}' and b.relkind = 'r'
