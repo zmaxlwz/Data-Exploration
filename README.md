@@ -8,7 +8,7 @@ Then the users can start the application from the entry page, connect.php, in th
 
 ![data distribution display](figures/histogram.png)
 
-## interactive labeling through maps
+## interactive labeling and model prediction
 
 ![interactive labeling](figures/maps.png)
 
